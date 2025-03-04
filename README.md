@@ -9,6 +9,7 @@ This is a repo with my contributions to the [TidyTuesday challenge](https://gith
 I have tried to make the code as reproducible as possible. The easiest way is to use [uv](https://docs.astral.sh/uv/).
 
 ```bash
+uv python install
 uv sync
 ```
 
