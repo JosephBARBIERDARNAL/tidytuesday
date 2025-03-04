@@ -134,7 +134,7 @@ fig_arrow(
 title = """
 Number of animals adopted at the\nLong Beach animal shelter
 """
-fig.text(x=0.14, y=0.9, s=title, size=30, font=regularfont, va="top")
+fig.text(x=0.14, y=0.9, s=title, size=30, font=lightfont, va="top")
 
 subtitle = f"""
 <Dogs> and <Cats> represent {share_catdog:.0f}% of all adoptions during the period
@@ -144,7 +144,7 @@ fig_text(
     y=0.75,
     s=subtitle,
     size=18,
-    font=regularfont,
+    font=lightfont,
     color="#afafaf",
     va="top",
     highlight_textprops=[{"color": colors[1]}, {"color": colors[0]}],
