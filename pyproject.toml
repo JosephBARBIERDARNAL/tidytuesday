@@ -1,0 +1,17 @@
+[project]
+name = "tidytuesday"
+version = "0.1.0"
+description = "My contributions to the TidyTuesday challenge"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "drawarrow>=0.0.3",
+    "highlight-text>=0.2",
+    "matplotlib>=3.10.1",
+    "pydytuesday>=0.0.4",
+    "pyfonts>=0.0.2",
+    "pypalettes>=0.1.5",
+    "pywaffle>=1.1.1",
+    "requests>=2.32.3",
+    "seaborn>=0.13.2",
+]
