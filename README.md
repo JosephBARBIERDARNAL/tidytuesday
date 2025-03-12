@@ -23,6 +23,10 @@ uv run src/2025/2025-03-04/main.py
 
 ## Visualizations
 
+#### 2025-03-1 - Pixar films
+
+![](src/2025/2025-03-11/output.png)
+
 #### 2025-03-04 - Long Beach animal shelter
 
 ![](src/2025/2025-03-04/output.png)

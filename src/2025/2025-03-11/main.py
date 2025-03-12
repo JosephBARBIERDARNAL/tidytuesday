@@ -34,8 +34,9 @@ ax.set_xlim(30, 105)
 ax.spines[["top", "right", "left", "bottom"]].set_visible(False)
 ax.grid(axis="x", color="#676767", zorder=-1, lw=0.5)
 ax.tick_params(labelsize=8, size=0, labelcolor=text_color)
-ax.tick_params(axis="x", pad=10)
-ax.tick_params(axis="y", pad=30)
+ax.tick_params(axis="x", pad=5)
+ax.tick_params(axis="y", pad=25)
+ax.set_xticks(list(range(30, 91, 10)))
 
 x0, x1 = ax.get_xlim()
 y0, y1 = ax.get_ylim()
@@ -51,8 +52,8 @@ ax_arrow([x0 - 5.5, y0], [x1 + 5, y0], **arrow_style)
 ax_arrow([x0 - 5, y0 - 30], [x0 - 5, y1], **arrow_style)
 
 label_style = dict(color="#e1e1e1", transform=ax.transAxes, font=italicfont, size=8)
-ax.text(x=-0.05, y=0.94, s="Year", rotation=90, **label_style)
-ax.text(x=0.93, y=0.01, s="Rating", **label_style)
+ax.text(x=-0.11, y=0.94, s="Year", rotation=90, **label_style)
+ax.text(x=0.93, y=-0.02, s="Rating", **label_style)
 
 for i, row in df.iterrows():
     ax.text(
@@ -63,15 +64,36 @@ for i, row in df.iterrows():
         va="center",
         size=8,
         zorder=10,
-        color=text_color,
+        color="black",
         font=lightfont,
         bbox=dict(
             boxstyle="round",
-            facecolor="#9f8787",
+            facecolor="#ceafaf",
             edgecolor=text_color,
             lw=0.5,
             pad=0.4,
         ),
     )
+
+fig.text(
+    x=0.07, y=0.91, s="Pixar films rating", color=text_color, font=lightfont, size=18
+)
+fig.text(
+    x=0.07,
+    y=0.89,
+    s="Ratings (0 - 100) from Rotten Tomatoes",
+    color=text_color,
+    font=lightfont,
+    size=9.7,
+)
+fig.text(
+    x=0.9,
+    y=0.895,
+    s="TidyTuesday - 2025-03-11\nJoseph Barbier",
+    font=lightfont,
+    size=7,
+    color=text_color,
+    ha="right",
+)
 
 fig.savefig("src/2025/2025-03-11/output.png", dpi=300, bbox_inches="tight")
