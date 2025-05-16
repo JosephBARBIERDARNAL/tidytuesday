@@ -23,6 +23,10 @@ uv run src/2025/2025-03-04/main.py
 
 ## Visualizations
 
+#### (not tidytuesday) Pyfonts downloads
+
+![](src/other/pyfonts-download/output.png)
+
 #### 2025-03-1 - Pixar films
 
 ![](src/2025/2025-03-11/output.png)
