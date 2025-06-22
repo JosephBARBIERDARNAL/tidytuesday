@@ -37,7 +37,7 @@ def get_weekly_downloads_df(package_name):
 
 
 # Example usage
-# df_weekly = get_weekly_downloads_df("pyfonts")
+df_weekly = get_weekly_downloads_df("pyfonts")
 df_weekly["week_start"] = pd.to_datetime(df_weekly["week"] + "-1", format="%G-W%V-%u")
 df = df_weekly[df_weekly["week_start"] >= "2025-03-03"]
 df = df.iloc[:-1]
