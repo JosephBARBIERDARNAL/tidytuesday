@@ -1,6 +1,6 @@
 # tidytuesday
 
-This is a repo with my contributions to the [TidyTuesday challenge](https://github.com/rfordatascience/tidytuesday).
+This is a repo with my contributions to the [TidyTuesday challenge](https://github.com/rfordatascience/tidytuesday), among others.
 
 <br><br>
 
@@ -22,6 +22,10 @@ uv run src/2025/2025-03-04/main.py
 <br><br>
 
 ## Visualizations
+
+#### 2025-07-1 - US gas prices
+
+![](src/2025/2025-07-01/output.png)
 
 #### (not tidytuesday) Pyfonts downloads
 
