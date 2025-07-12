@@ -111,8 +111,8 @@ ax.text(
     **title_args,
 )
 ax_text(
-    x=pd.to_datetime("1993-01-01"),
-    y=y - 0.14,
+    x=pd.to_datetime("1990-01-01"),
+    y=5.4,
     s="<Data>: U.S. Energy Information Administration\n<Graphic>: Joseph Barbier",
     highlight_textprops=[{"font": boldfont}, {"font": boldfont}],
     color="#6B6B6B",

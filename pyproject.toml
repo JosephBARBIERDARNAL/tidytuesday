@@ -11,6 +11,7 @@ dependencies = [
     "highlight-text>=0.2",
     "matplotlib>=3.10.1",
     "mplcyberpunk>=0.7.6",
+    "polars>=1.31.0",
     "pydytuesday>=0.0.4",
     "pyfonts>=1.0.0",
     "pypalettes>=0.1.5",
