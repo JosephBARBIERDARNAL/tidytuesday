@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "cartopy>=0.24.1",
+    "dayplot>=0.4.2",
     "drawarrow>=0.0.3",
     "fleur>=0.0.4",
     "geopandas>=1.1.0",
