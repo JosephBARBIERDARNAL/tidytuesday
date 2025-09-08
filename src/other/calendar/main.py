@@ -1,46 +1,53 @@
-import pandas as pd
 import matplotlib.pyplot as plt
 import dayplot as dp
+import pandas as pd
+from pyfonts import load_google_font
+from pypalettes import load_cmap
 
 
 df = pd.read_csv("src/other/calendar/pageview.csv")
 df.columns = ["dates", "views"]
-df.loc[len(df)] = ["2025-12-31", 0]
-df.tail()
+df.head()
 
-fig, axs = plt.subplots(figsize=(18, 5), nrows=3)
+cmap = load_cmap("Mushroom", cmap_type="continuous", reverse=True)
 
-args = dict(
-    vmax=df["views"].max(),
-    vmin=df["views"].min(),
-)
+fig, ax = plt.subplots(figsize=(15, 5))
+
 dp.calendar(
     dates=df["dates"],
     values=df["views"],
-    start_date="2023-01-01",
-    end_date="2024-01-01",
-    ax=axs[0],
-    **args,
+    legend=True,
+    legend_bins=8,
+    ax=ax,
+    cmap=cmap,
 )
-dp.calendar(
-    dates=df["dates"],
-    values=df["views"],
-    start_date="2024-01-01",
-    end_date="2024-12-31",
-    ax=axs[1],
-    **args,
+
+thing = "capybara"
+fig.text(
+    x=0.5,
+    y=0.87,
+    s=f"Is {thing} not a thing anymore?!",
+    size=25,
+    ha="center",
+    font=load_google_font("Roboto", weight="bold"),
 )
-dp.calendar(
-    dates=df["dates"],
-    values=df["views"],
-    start_date="2025-01-01",
-    end_date="2025-12-31",
-    ax=axs[2],
-    **args,
+fig.text(
+    x=0.5,
+    y=0.8,
+    s=f"Daily visits of the '{thing.title()}' Wikipedia page in 2025",
+    size=13,
+    ha="center",
+    color="grey",
+    font=load_google_font("Roboto", italic=True),
 )
-text_args = dict(x=-4, y=3.5, size=20, rotation=90, color="#aaa", va="center")
-axs[0].text(s="2023", **text_args)
-axs[1].text(s="2024", **text_args)
-axs[2].text(s="2025", **text_args)
+fig.text(
+    x=0.87,
+    y=0.2,
+    s="Made with dayplot, by Joseph Barbier",
+    size=8,
+    ha="right",
+    color="darkgrey",
+    font=load_google_font("Roboto"),
+)
 
 plt.savefig("src/other/calendar/output.png", dpi=300, bbox_inches="tight")
