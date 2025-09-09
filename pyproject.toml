@@ -5,6 +5,7 @@ description = "My contributions to the TidyTuesday challenge"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "bumplot>=0.1.1",
     "cartopy>=0.24.1",
     "dayplot>=0.4.2",
     "dotenv>=0.9.9",
