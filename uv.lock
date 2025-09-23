@@ -261,6 +261,18 @@ wheels = [
 ]
 
 [[package]]
+name = "gifing"
+version = "0.1.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "imageio" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/99/0f/cec460def26d663e624efb117a10478adbd01edd889d1f5e704b530db394/gifing-0.1.1.tar.gz", hash = "sha256:4d9aec2bd033f913c81a2cc34acd778f8ddb151cc48f6f6fb7c110508178fb5d", size = 5363545, upload-time = "2025-05-24T14:51:18.117Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/7b/e3/12bc273cbe9001c355514040a00e7842fad112f55f95737b5f691b70df3b/gifing-0.1.1-py3-none-any.whl", hash = "sha256:7eca76587dfcfc2ff449b4a56c5f663b3a389c1d67afc43aceceb4b803931c0f", size = 5580, upload-time = "2025-05-24T14:51:16.218Z" },
+]
+
+[[package]]
 name = "highlight-text"
 version = "0.2"
 source = { registry = "https://pypi.org/simple" }
@@ -276,6 +288,19 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/f1/70/7703c29685631f5a7590aa73f1f1d3fa9a380e654b86af429e0934a32f7d/idna-3.10.tar.gz", hash = "sha256:12f65c9b470abda6dc35cf8e63cc574b1c52b11df2c86030af0ac09b01b13ea9", size = 190490, upload-time = "2024-09-15T18:07:39.745Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/76/c6/c88e154df9c4e1a2a66ccf0005a88dfb2650c1dffb6f5ce603dfbd452ce3/idna-3.10-py3-none-any.whl", hash = "sha256:946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3", size = 70442, upload-time = "2024-09-15T18:07:37.964Z" },
+]
+
+[[package]]
+name = "imageio"
+version = "2.37.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+    { name = "pillow" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/0c/47/57e897fb7094afb2d26e8b2e4af9a45c7cf1a405acdeeca001fdf2c98501/imageio-2.37.0.tar.gz", hash = "sha256:71b57b3669666272c818497aebba2b4c5f20d5b37c81720e5e1a56d59c492996", size = 389963, upload-time = "2025-01-20T02:42:37.089Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/cb/bd/b394387b598ed84d8d0fa90611a90bee0adc2021820ad5729f7ced74a8e2/imageio-2.37.0-py3-none-any.whl", hash = "sha256:11efa15b87bc7871b61590326b2d635439acc321cf7f8ce996f812543ce10eed", size = 315796, upload-time = "2025-01-20T02:42:34.931Z" },
 ]
 
 [[package]]
@@ -945,6 +970,19 @@ wheels = [
 ]
 
 [[package]]
+name = "snaplot"
+version = "0.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "gifing" },
+    { name = "matplotlib" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/63/c2/926f029fa534488354b7729335c2a63d853b5a8a95ef9d97f86986f571d5/snaplot-0.1.0.tar.gz", hash = "sha256:be95bfa8638af918e9e6a776b5f5ca74ef523475fed911fa7cbade900ea3ddf1", size = 23756286, upload-time = "2025-06-29T14:38:02.415Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/fe/dd/65d259db24336c260338187441e6d6ad5316fb4c46b81d86700f21b7b402/snaplot-0.1.0-py3-none-any.whl", hash = "sha256:0a808ae5d4340a3c2aa0cedac6669fb028e069f9520cb3bc9cb848a029528858", size = 4813, upload-time = "2025-06-29T14:38:00.955Z" },
+]
+
+[[package]]
 name = "soupsieve"
 version = "2.8"
 source = { registry = "https://pypi.org/simple" }
@@ -978,6 +1016,7 @@ dependencies = [
     { name = "requests" },
     { name = "ruff" },
     { name = "seaborn" },
+    { name = "snaplot" },
 ]
 
 [package.metadata]
@@ -1002,6 +1041,7 @@ requires-dist = [
     { name = "requests", specifier = ">=2.32.3" },
     { name = "ruff", specifier = ">=0.11.10" },
     { name = "seaborn", specifier = ">=0.13.2" },
+    { name = "snaplot", specifier = ">=0.1.0" },
 ]
 
 [[package]]
