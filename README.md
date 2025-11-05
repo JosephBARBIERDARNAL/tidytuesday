@@ -1,6 +1,6 @@
 # tidytuesday
 
-This is a repo with my contributions to the [TidyTuesday challenge](https://github.com/rfordatascience/tidytuesday), among others.
+This is a repo with my contributions to the [TidyTuesday challenge](https://github.com/rfordatascience/tidytuesday), **among others**.
 
 <br><br>
 
@@ -22,6 +22,14 @@ uv run src/2025/2025-03-04/main.py
 <br><br>
 
 ## Visualizations
+
+#### (not tidytuesday) Gini index
+
+![](src/other/inequality/output.png)
+
+#### (not tidytuesday) CO2 Emissions by Country
+
+![](src/other/co2-country/output.png)
 
 #### 2025-07-1 - US gas prices
 
