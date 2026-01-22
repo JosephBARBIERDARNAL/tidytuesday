@@ -23,6 +23,10 @@ uv run src/2025/2025-03-04/main.py
 
 ## Visualizations
 
+#### 2026-01-20 - Top 10 astrophotographers
+
+![](src/2026/2026-01-20/output.png)
+
 #### (not tidytuesday) Gini index
 
 ![](src/other/inequality/output.png)
