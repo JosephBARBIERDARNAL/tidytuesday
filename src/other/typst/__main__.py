@@ -94,4 +94,4 @@ fig_text(
     highlight_textprops=[{"font": bold}, {"color": "#1a7a87", "font": bold}],
 )
 
-plt.savefig("src/other/typst/output.png", dpi=300, bbox_inches="tight")
+plt.savefig("src/other/typst/output.png", dpi=300)  # , bbox_inches="tight")
