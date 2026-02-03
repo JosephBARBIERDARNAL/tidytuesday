@@ -23,6 +23,10 @@ uv run src/2025/2025-03-04/main.py
 
 ## Visualizations
 
+#### 2026-02-03 - Time to harvest of edible plants
+
+![](src/2026/2026-02-03/output.png)
+
 #### (not tidytuesday) Typst Github stars
 
 ![](src/other/typst/output.png)
